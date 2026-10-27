@@ -1,0 +1,12 @@
+{
+  "name": "askloop",
+  "description": "Questions and decisions a few at a time: the agent keeps at most N open, asks the most important first, and keeps working while you answer.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Dylan Bridgman"
+  },
+  "homepage": "https://github.com/dylanbr/askloop-agent-skill",
+  "repository": "https://github.com/dylanbr/askloop-agent-skill",
+  "license": "MIT",
+  "keywords": ["questions", "decisions", "workflow", "agent-skills"]
+}

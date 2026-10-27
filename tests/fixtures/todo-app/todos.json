@@ -1,0 +1,4 @@
+[
+  { "id": 1, "text": "Buy milk", "done": false },
+  { "id": 2, "text": "Write report", "done": true }
+]

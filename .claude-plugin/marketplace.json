@@ -1,0 +1,18 @@
+{
+  "name": "askloop",
+  "owner": {
+    "name": "Dylan Bridgman"
+  },
+  "metadata": {
+    "description": "Question-loop agent skill for Claude Code and other AI coding agents"
+  },
+  "plugins": [
+    {
+      "name": "askloop",
+      "source": "./",
+      "description": "Questions and decisions a few at a time, while the agent keeps working.",
+      "category": "productivity",
+      "homepage": "https://github.com/dylanbr/askloop-agent-skill"
+    }
+  ]
+}
