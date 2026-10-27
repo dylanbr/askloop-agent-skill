@@ -72,6 +72,14 @@ if [ "${1:-}" = --check ]; then
 else
   cases=("$@")
   [ ${#cases[@]} -eq 0 ] && cases=($(ls "$TESTS/cases"))
+  # Check every name first: an unknown one would still start a paid run, with
+  # an empty prompt.
+  for name in "${cases[@]}"; do
+    if [ ! -f "$TESTS/cases/$name/prompt.md" ] || [ ! -f "$TESTS/cases/$name/check.sh" ]; then
+      echo "no such test case: $name (see tests/cases/)" >&2
+      exit 2
+    fi
+  done
   for name in "${cases[@]}"; do run_case "$name"; done
 fi
 

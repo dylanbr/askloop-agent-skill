@@ -4,7 +4,7 @@
     "name": "Dylan Bridgman"
   },
   "metadata": {
-    "description": "Question-loop agent skill for Claude Code and other AI coding agents"
+    "description": "askloop: an agent skill for Claude Code and other AI coding agents"
   },
   "plugins": [
     {
