@@ -4,13 +4,13 @@
     "name": "Dylan Bridgman"
   },
   "metadata": {
-    "description": "askloop: an agent skill for Claude Code and other AI coding agents"
+    "description": "Agent skill for Claude Code and other AI coding agents: questions and decisions a few at a time, while the agent keeps working."
   },
   "plugins": [
     {
       "name": "askloop",
       "source": "./",
-      "description": "Questions and decisions a few at a time, while the agent keeps working.",
+      "description": "Questions and decisions a few at a time: the agent keeps at most N open, asks the most important first, and keeps working while you answer.",
       "category": "productivity",
       "homepage": "https://github.com/dylanbr/askloop-agent-skill"
     }
