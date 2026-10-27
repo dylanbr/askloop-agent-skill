@@ -101,7 +101,7 @@ Check for new user messages after every step. When a reply arrives:
 
 Do the work yourself in the main conversation; one agent is usually faster and avoids conflicting edits. Use subagents only when the user asks for them. Subagents can't ask the user directly, so tell them to return their questions to you instead of guessing; then queue those questions like any other.
 
-Prefer work that doesn't depend on any open question. You may build on a recommendation for an open question only when that work is cheap to undo. Add it under "Assumptions in use", and redo it if the answer differs.
+Prefer work that doesn't depend on any open question, especially groundwork that makes every answer easier to act on (e.g. separating storage code from the rest before the user picks a database). You may build on a recommendation for an open question only for small, contained pieces that are cheap to throw away, never for a core design choice the question is about: don't implement the database, framework or architecture you're asking the user to choose. Add such work under "Assumptions in use", and redo it if the answer differs.
 
 When nothing is left that you can do without answers, end your turn with the open questions (still at most N) as the last thing in your reply, so the user doesn't have to scroll back for them.
 
